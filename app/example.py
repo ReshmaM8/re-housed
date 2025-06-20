@@ -1,6 +1,7 @@
 import streamlit as st
 #import plotly.express as px
 import pandas as pd
+from PIL import Image
 
 # Page configuration
 st.set_page_config(
@@ -230,12 +231,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def create_header():
+    st.markdown('<div class="custom-header">',unsafe_allow_html=True )
+
+    logo = Image.open('app/images/logo.png')
+    st.image(logo, width=60)
+
     st.markdown("""
-    <div class="custom-header">
-        <div class="logo-section">
-           <img src="./app/images/trying again.png" class="logo-icon">
             <h2 style="margin: 0; color: #1264AB;">Re:Housed</h2>
-        </div>
         <div class="nav-links">
             <a href="#" class="nav-link">About</a>
             <a href="#" class="nav-link">Design</a>
