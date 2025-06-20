@@ -8,7 +8,7 @@ Next activate the virtual environment:
 - On Windows:
   
 ```python 
-.\venv\Scripts\activate
+.\ai4Good\Scripts\activate
 ```
 
 Next, install the required packages:
