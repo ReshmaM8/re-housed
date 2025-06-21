@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+
+:root {
+  --primary-color: #EAEDF6;
+  --secondary-color: #1264AB;
+  --text-color: #000000;
+  --font-family: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 32px;
+  z-index:1000;
+  background-color: var(--primary-color);
+
+}
+
+.brandSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.App-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.brandName {
+  font-size: 40px;  
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin: 0;
+}
+.navBar > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+#logo1 {
+  font-size: 40px;
+  text-decoration: none;
+  height: auto;
+}
+
+#logo1:hover{
+  cursor: pointer;
+}
+
+.underlineText {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 7px;
+  transition: text-decoration-color 0.3s ease;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.underlineText:hover{
+  text-decoration-color: var(--secondary-color);
+  transition-property: text-decoration-color;
+  transition-duration: 1s;
+}
+
+.dashboardButton {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboardButton:hover {
+  background-color: #0f5490;
+}
+
+.title1{
+  text-align: center;
+  color:var(--secondary-color)
+}
+
+
+
+
+
