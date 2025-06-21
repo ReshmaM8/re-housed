@@ -20,9 +20,13 @@ function App() {
         </nav>        
       </header>
       <main className="App-main">
-        <section class = "titleSection"> 
-            <h1 class="title1">Mapping Tomorrow’s Shelters <i>Today.</i></h1>
-            <h2 class="title2">Accelerating Shelter Selection through Data-Informed Decisions</h2></section>
+        <section className="titleSection"> 
+            <h1 className="title1">Mapping Tomorrow’s Shelters <i>Today.</i></h1>
+            <h2 className="title2">Accelerating Shelter Selection through Data-Informed Decisions</h2>
+          </section>
+        <section className="statisticsSection">
+
+        </section>
       </main>
     </div>
   );
