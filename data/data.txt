@@ -1,0 +1,21 @@
+The files contained in this folder are the following:
+  centroid_service_counts.csv
+  final_grid_with_neighborhoods.csv
+  full_table_filled.csv
+  grid_centroids.csv
+  grid_with_neighborhoods.csv
+  neighborhoods-profile.csv
+  neighborhoods-updated.csv
+  Neighbourhoods.csv
+  neighbourhoods.geojson
+  populations-and-id.xlsx
+  populations.csv
+  rehoused-conditioned.csv
+  rehoused-encampments.csv
+  rehoused-libraries.csv
+  rehoused-medical-updated.csv
+  rehoused-stops.csv
+  rehoused-washrooms.csv
+  rehoused-wifi.csv
+  updated-foodbanks.csv
+  wellbeing_toronto.csv
