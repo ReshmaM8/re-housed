@@ -1,5 +1,6 @@
 import streamlit as st
 
+# st.sidebar.image("../dashboard/images/logo.png", width=80 )
 # Define the pages
 main_page = st.Page("models.py", title="Final Model")
 page_2 = st.Page("modelA.py", title="Predicting homelessness risk")
