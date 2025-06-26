@@ -5,9 +5,6 @@ from PIL import Image
 import streamlit.components.v1 as components
 import os
 
-st.title("Re:Housed | An ideal intersection of social network & service accessibility. ")
-
-
 
 st.title("Re:Housed | An ideal intersection of social network & service accessibility. ")
 
