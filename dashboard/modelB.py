@@ -8,8 +8,8 @@ st.title("Understand service demand for encampment.")
 
 st.markdown("METHODOLOGY")
 
-image = Image.open("/home/reshmam/Documents/Documents/GitHub/re-housed/dashboard/images/modelB.png")
+image = Image.open("../dashboard/images/modelB.png")
 st.image(image, caption="This is an image", use_container_width=True)
 
-image2 = Image.open("/home/reshmam/Documents/Documents/GitHub/re-housed/dashboard/images/modelB2.png")
+image2 = Image.open("../dashboard/images/modelB2.png")
 st.image(image2, caption="This is an image", use_container_width=True)

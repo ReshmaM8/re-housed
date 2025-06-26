@@ -8,5 +8,5 @@ st.title("Predicting homelessness risk")
 
 st.markdown("METHODOLOGY")
 
-image = Image.open("/home/reshmam/Documents/Documents/GitHub/re-housed/dashboard/images/modelA.png")
+image = Image.open("../dashboard/images/modelA.png")
 st.image(image, caption="This is an image", use_container_width=True)
