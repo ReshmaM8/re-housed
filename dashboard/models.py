@@ -5,6 +5,9 @@ from PIL import Image
 import streamlit.components.v1 as components
 import os
 
+st.title("Re:Housed | An ideal intersection of social network & service accessibility. ")
+
+
 
 st.title("Re:Housed | An ideal intersection of social network & service accessibility. ")
 
@@ -24,3 +27,4 @@ st.image(image, caption="Spatially distributed model map", use_container_width=T
 st.divider()
 st.markdown("RESULTS")
 st.markdown("The analysis successfully identified 20 spatially distributed areas that exhibit a high combined score from the two prediction layers. These areas are suggested as potential priority locations based on the input data and the defined criteria for selection (high combined prediction and spatial separation).")
+

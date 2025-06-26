@@ -4,6 +4,14 @@ import mapE from './assets/etobicokeyork.png';
 import mapN from './assets/northyork.png';
 import mapS from './assets/scarbro.png';
 import mapT from './assets/torontoeastyork.png';
+import majda from './assets/majda.jpg';
+import oorja from './assets/oorja.jpg';
+import natalie from './assets/natalie.jpg';
+import saba from './assets/saba.jpg';
+import shaina from './assets/shaina.jpg';
+import reshma from './assets/reshma.jpg';
+import eptehal from './assets/eptehal.jpg';
+import diana from './assets/diana.jpg';
 import './App.css';
 
 function App() {
@@ -45,14 +53,14 @@ function App() {
     return tooltipData[region] || { title: 'Unknown Region', info: 'No data available' };
   };
   const teamMembers = [
-    { id: 1, name: `Team Member 1`, image: "" },
-    { id: 2, name: `Team Member 2`, image: "" },
-    { id: 3, name: `Team Member 3`, image: "" },
-    { id: 4, name: `Team Member 4`, image: "" },
-    { id: 5, name: `Team Member 5`, image: "" },
-    { id: 6, name: `Team Member 6`, image: "" },
-    { id: 7, name: `Team Member 7`, image: "" },
-    { id: 8, name: `Team Member 8`, image: "" },
+    { id: 3, name: `Majda Lojpur`, image: majda },
+    { id: 4, name: `Natalie Oulikhanian`, image: natalie},
+    { id: 5, name: `Oorja Dorkar`, image: oorja },
+    { id: 6, name: `Saba Memon`, image: saba},
+    { id: 7, name: `Shaina Sumaiya`, image: shaina },
+    { id: 8, name: `Reshma M`, image: reshma },
+    { id: 1, name: `Mentor - Diana Moyano`, image: diana },
+    { id: 2, name: `TA - Eptehal Nashnoush`, image: eptehal }
   ];
 
   return (
@@ -133,6 +141,22 @@ function App() {
               {getTooltipContent(tooltip).info}
             </div>
           )}
+          <div className="statisticsgroup">
+          <div className = "statisticsboth">
+            <div className = "statistic1">
+              <h2 className="statisticTitle">10,251</h2>
+              <p className="statisticText">
+                People actively homeless in the last three months.
+              </p>
+            </div >
+            <div className = "statistic2">
+              <h2 className="statisticTitle">385</h2>
+              <p className="statisticText">
+                Torontonians experienced being newly homeless in May 2025.
+              </p>
+            </div >
+          </div>
+          </div>
 
 
         </section>
@@ -190,7 +214,7 @@ function App() {
 
           {/*goal 6 */}
           <div className="goalItem">
-            <div className="goalNumber">6</div>
+            <div className="goalNumber6">6</div>
             <div className="goalContent">
               <p>Strengthen the Collection, Management, and Analysis of Infrastructure Data</p>
             </div>
@@ -199,8 +223,8 @@ function App() {
 
         <div className="missionIntro">
           <p>
-            Re:Housed is grounded in the sixth goal—Strengthen the Collection, 
-            Management, and Analysis of Infrastructure Data—and builds on it by 
+            Re:Housed is grounded in the  <b>sixth goal → Strengthen the Collection, 
+            Management, and Analysis of Infrastructure Data </b> —and builds on it by 
             leveraging publicly available datasets to develop an ethically informed, 
             data-driven AI model. Designed to support the City of Toronto's shelter site 
             planning and analysis, Re:Housed helps to make smarter, faster, and more 
@@ -263,14 +287,15 @@ function App() {
               <div className="member-image-container">
                 <img 
                   src={member.image} 
-                  alt={member.name}
                   className="member-image"
                 />
               </div>
               
               {/* Name Placeholder */}
               <div className="member-info">
-                <div className="member-name-placeholder"></div>
+                <div className="member-name-placeholder">
+                  {member.name}
+                </div>
                 <div className="member-title-placeholder"></div>
               </div>
             </div>
@@ -280,43 +305,60 @@ function App() {
       </div>
       </section>
 
-      <section className="specialSecion">
-        <div className="specialContainer">
-          <h2 className="specialTitle">Special Thanks  ❤️ </h2>
-          <p className="specialText">
-            A shout out to different people who helped to make this project: </p>
-            <nav className="specialList">
-              <ul>
-                <li>Diana Moyano (Mentor)</li>
-                <li>Eptehal Nashnoush (TA)</li>
-                <li>Daniel (Vector)</li>
-                <li>Micheal (TSS)</li>
-                <li>Tia Aprile (MPAC)</li>
-                <li>Michael Lyster (Director of Housing and Shelters, Homes First Society)</  li>
-                <li>Kiefer Shields (Property Services Supervisor at Shelter, Support & Housing Administration, The City of Toronto)</li>
-                <li>Loretta Ramadhin (Director of Infrastructure, Planning & Development (IPD), The City of Toronto - The Toronto Shelter & Support Services Division)</li>
-                <li>Dina Lojpur (Pins production)</li>
+  <div className="special-thanks-container">
+        <section className="special-thanks-section">
+          <h1 className="section-title">
+            Special Thanks <span className="heart">💖</span>
+          </h1>
+          
+          <p className="intro-text">
+            A shout out to different people who helped to make this project:
+          </p>
+          
+          <ul className="contributors-list">
+            <li>Diana Moyano (Mentor)</li>
+            <li>Eptehal Nashnoush (TA)</li>
+            <li>Daniel (Vector)</li>
+            <li>Micheal (TSS)</li>
+            <li>Tia Aprile (MPAC)</li>
+            <li>Michael Lyster (Director of Housing and Shelters, Homes First Society)</li>
+            <li>Kiefer Shields (Property Services Supervisor at Shelter, Support & Housing Administration, The City of Toronto)</li>
+            <li>Lorette Remanthin (Director of Infrastructure, Planning & Development (IPD), The City of Toronto - The Toronto Shelter & Support Services Division)</li>
+            <li>Dina Lojpur (Pins production)</li>
+          </ul>
 
-                </ul> 
-                </nav>
+          <div className="images-section">
+            <h3 className="images-title">Our Stakeholders</h3>
+            <div className="image-gallery">
+              <div className="image-item">
+                <img src="https://i0.wp.com/brentworks.ca/wp-content/uploads/2022/02/city-of-toronto-logo-vector-e1653754059472.png?ssl=1" alt="City of Toronto" />
+                <p className="image-caption">City of Toronto</p>
+              </div>
+              <div className="image-item">
+                <img src="https://kismetgroup.ca/wp-content/uploads/2017/08/MPAC-logo.png" alt="MPAC" />
+                <p className="image-caption">MPAC</p>
+              </div>
+              <div className="image-item">
+                <img src="https://mma.prnewswire.com/media/1011620/Vector_Institute_Vector_Institute_appoints_eight_new_Faculty_Mem.jpg?p=facebook" alt="Vector Institute" />
+                <p className="image-caption">University of Toronto </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        </div>
-      </section>
-
-      <section className="missionSection">
-      <div className="missionContainer">
-        <h2 className="missionTitle">Land Acknowledgement</h2>
-        
-        <p className="missionIntro">
-          We acknowledge the land we are meeting on is the traditional territory  of many 
-          nations including the Mississaugas of the Credit, the  Anishnabeg, the Chippewa,
-           the Haudenosaunee and the Wendat peoples and  is now home to many diverse First Nations,
-            Inuit and Métis peoples. We  also acknowledge that Toronto is covered by Treaty 13 with 
-            the  Mississaugas of the Credit.
-        </p>
-        </div>
-
-      </section>
+        <section className="land-acknowledgement-section">
+          <h2 className="section-title">Land Acknowledgement</h2>
+          
+          <div className="acknowledgement-text">
+            <p>
+              We acknowledge the land we are meeting on is the traditional territory of many nations including the
+              Mississaugas of the Credit, the Anishnabeg, the Chippewa, the Haudenosaunee and the Wendat peoples
+              and is now home to many diverse First Nations, Inuit and Métis peoples. We also acknowledge that
+              Toronto is covered by Treaty 13 with the Mississaugas of the Credit.
+            </p>
+          </div>
+        </section>
+      </div>
 
       </main>
     </div>
